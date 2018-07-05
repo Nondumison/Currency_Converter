@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="c.js"></script>
+    <title>Currency Converter</title>
+    <style media="screen">
+    h2{
+      background-color: blue;
+      width: 40%;
+      color: white;
+      text-align: center;
+    }
+    table{
+      border: 1px solid black;
+      padding: 29px;
+    }
+    </style>
+  </head>
+  <body>
+  <div id= "box">
+    <h2>Currency Converter</h2>
+    <table>
+<tr>
+  <td><input id="fromAmount" size="15" type="text" value="1" onkeyup="convertCurrency();"/></td>
+  <td><select id="from" onchange="converCurrency();">
+  <option value="AUD">Austrialian Dollar(AUD)</option>
+  <option value="BGN">Bulgarian Lev(BGN)</option>
+  <option value="CAD">Canadian Dollar(CAD)</option>
+  <option value="CHF">Swiss Franc (CHF)</option>
+  <option value="DKK">Danish Krone (DKK)</option>
+  <option value="GBP">Pound Sterling(GBP)</option>
+  <option value="ILS">Israeli New Shekel (ILS)</option>
+  <option value="AUD">Austrialian Dollar(AUD)</option>
+  <option value="INR" selected>Indian Rupee (INR)</option>
+  <option value="ZAR">South African Rand(ZAR)</option>
+  </select>
+</td>
+</tr>
+
+
+<tr>
+<td><input id="toAmount"size="15" disabled type="text"/></td>
+  <td><select id="to" onchange="converCurrency();">
+<option value="AUD">Austrialian Dollar(AUD)</option>
+<option value="BGN">Bulgarian Lev(BGN)</option>
+<option value="CAD">Canadian Dollar(CAD)</option>
+<option value="CHF">Swiss Franc (CHF)</option>
+<option value="DKK">Danish Krone (DKK)</option>
+<option value="GBP">Pound Sterling(GBP)</option>
+<option value="ILS">Israeli New Shekel (ILS)</option>
+<option value="AUD" selected>Austrialian Dollar(AUD)</option>
+<option value="INR">Indian Rupee (INR)</option>
+<option value="ZAR">South African Rand(ZAR)</option>
+</select>
+</td></tr>
+</td>
+</tr>
+
+
+
+
+
+
+
+    </table>
+  </body>
+</html>
