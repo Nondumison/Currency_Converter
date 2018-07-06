@@ -3,37 +3,120 @@
   <head>
     <meta charset="utf-8">
     <script src="c.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Currency Converter</title>
     <style media="screen">
-    h2{
-      background-color: blue;
-      width: 40%;
-      color: white;
+    body{
+    background-image: url("bit.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+   h2{
+    /*  background-color: yellow;*/
+      /*padding: 20px 20px 20px 20px;*/
+      width: 43%;
+      color: yellow;
+      font-size: 30px;
       text-align: center;
+      margin: 70px 0 50px 250px;
+      font-family:monospace;
+
     }
+
     table{
-      border: 1px solid black;
-      padding: 29px;
+      border: 1px solid yellow;
+      padding: 60px 60px 60px 60px;
+      margin: 80px 0 50px 250px;
+      background-color: black;
+      text-align: center;
+      align: center;
+
+
+
     }
+
+
+.icon-bar {
+  position: fixed;
+  bottom: 10%;
+  margin-left: 35% ;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.icon-bar a {
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
     </style>
   </head>
   <body>
   <div id= "box">
-    <h2>Currency Converter</h2>
+    <h2>Moolah Currency Converter</h2>
     <table>
+
 <tr>
+
   <td><input id="fromAmount" size="15" type="text" value="1" onkeyup="convertCurrency();"/></td>
-  <td><select id="from" onchange="converCurrency();">
+  <td><select id="from" onchange="convertCurrency();">
   <option value="AUD">Austrialian Dollar(AUD)</option>
   <option value="BGN">Bulgarian Lev(BGN)</option>
   <option value="CAD">Canadian Dollar(CAD)</option>
   <option value="CHF">Swiss Franc (CHF)</option>
   <option value="DKK">Danish Krone (DKK)</option>
   <option value="GBP">Pound Sterling(GBP)</option>
-  <option value="ILS">Israeli New Shekel (ILS)</option>
+  <option value="ILS" selected>Israeli New Shekel (ILS)</option>
   <option value="AUD">Austrialian Dollar(AUD)</option>
-  <option value="INR" selected>Indian Rupee (INR)</option>
+  <option value="INR">Indian Rupee (INR)</option>
   <option value="ZAR">South African Rand(ZAR)</option>
+  <option value="KES">Kenyan Shilling(KES)</option>
+  <option value="EEK">Estonian Kroon(EEK)</option>
+  <option value="DZD">Algerian Dinar(DZD)</option>
+  <option value="MKD">Macedonian Denar(MKD)</option>
+  <option value="PKR">Pakistani Rupee(PKR)</option>
+  <option value="QAR">Qatari Rial(QAR)</option>
+  <option value="USD">United States Dollar(USD)</option>
+  <option value="UYU">Uruguayan Peso(UYU)</option>
+  <option value="VND">Vietnamese Dong(VND)</option>
+
   </select>
 </td>
 </tr>
@@ -41,7 +124,7 @@
 
 <tr>
 <td><input id="toAmount"size="15" disabled type="text"/></td>
-  <td><select id="to" onchange="converCurrency();">
+  <td><select id="to" onchange="convertCurrency();">
 <option value="AUD">Austrialian Dollar(AUD)</option>
 <option value="BGN">Bulgarian Lev(BGN)</option>
 <option value="CAD">Canadian Dollar(CAD)</option>
@@ -49,20 +132,29 @@
 <option value="DKK">Danish Krone (DKK)</option>
 <option value="GBP">Pound Sterling(GBP)</option>
 <option value="ILS">Israeli New Shekel (ILS)</option>
-<option value="AUD" selected>Austrialian Dollar(AUD)</option>
+<option value="AUD" >Austrialian Dollar(AUD)</option>
 <option value="INR">Indian Rupee (INR)</option>
 <option value="ZAR">South African Rand(ZAR)</option>
+<option value="KES">Kenyan Shilling(KES)</option>
+<option value="EEK">Estonian Kroon(EEK)</option>
+<option value="DZD">Algerian Dinar(DZD)</option>
+<option value="MKD">Macedonian Denar(MKD)</option>
+<option value="PKR">Pakistani Rupee(PKR)</option>
+<option value="QAR" selected>Qatari Rial(QAR)</option>
+<option value="USD">United States Dollar(USD)</option>
+<option value="UYU">Uruguayan Peso(UYU)</option>
+<option value="VND">Vietnamese Dong(VND)</option>
 </select>
 </td></tr>
 </td>
 </tr>
-
-
-
-
-
-
-
     </table>
+    <div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="google"><i class="fa fa-google"></i></a>
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
   </body>
 </html>
